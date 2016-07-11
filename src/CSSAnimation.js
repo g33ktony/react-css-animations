@@ -16,14 +16,14 @@ export default class CSSAnimation extends Component {
       ? 'removeEventListener'
       : 'addEventListener'
 
-    Object.keys(animationEvents).forEach(eventSufix => {
-      const listener = this.props[animationEvents[eventSufix]]
+    Object.keys(animationEvents).forEach(eventSuffix => {
+      const listener = this.props[animationEvents[eventSuffix]]
       if (listener !== noop) {
         prefixes.forEach(prefix => {
-          const sufix = prefix === '' || prefix === 'o'
-            ? eventSufix.toLowerCase()
-            : eventSufix
-          const eventName = `${prefix}${sufix}`
+          const suffix = prefix === '' || prefix === 'o'
+            ? eventSuffix.toLowerCase()
+            : eventSuffix
+          const eventName = `${prefix}${suffix}`
           container[elmMethod](eventName, listener, false)
         })
       }
