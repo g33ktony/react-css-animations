@@ -1,4 +1,7 @@
 # react-css-animation
+[![Travis][travis-image]][travis-url]
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 CSS animations made easy with React. All CSS animation properties are inlined,
 and vendor prefixed. Animation event listeners are also vendor prefixed.
@@ -52,3 +55,9 @@ Props:
 * `duration` {Number} - CSS "animation-duration" property in milliseconds. (`0`)
 * `iterationCount` {Number} - CSS "animation-iteration-count". (`1`)
 * `infinite` {Boolean} - Overides `iterationCount`, i.e. "animation-iteration-count: infinite". (`false`)
+
+## LICENSE
+MIT
+
+[travis-image]: https://travis-ci.org/nickpisacane/react-css-animation.svg?branch=master
+[travis-url]: https://travis-ci.org/nickpisacane/react-css-animation
