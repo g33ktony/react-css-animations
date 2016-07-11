@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/.setup.js test/**/*.test.js"
+    "test": "./node_modules/.bin/_mocha test/.setup.js test/**/*.test.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
     "jsdom": "^9.4.1",
+    "mocha": "^2.5.3",
     "react": "^15.2.1",
     "react-addons-test-utils": "^15.2.1",
     "react-dom": "^15.2.1",
