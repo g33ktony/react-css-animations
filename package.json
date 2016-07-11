@@ -1,14 +1,24 @@
 {
   "name": "react-css-animation",
   "version": "0.0.1",
-  "description": "",
+  "description": "CSS animations with react",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/_mocha test/.setup.js test/**/*.test.js"
+    "test": "./node_modules/.bin/_mocha test/.setup.js test/**/*.test.js",
+    "build": "babel ./src --out-dir lib",
+    "prepublish": "npm run prepublish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "animation",
+    "css"
+  ],
+  "author": "Nick Pisacane <pisacanen@gmail.com>",
+  "repoository": {
+    "type": "git",
+    "url": "https://github.com/nickpisacane/react-css-animation"
+  },
+  "license": "MIT",
   "devDependencies": {
     "animate.css": "^3.5.1",
     "babel-plugin-transform-object-assign": "^6.8.0",
@@ -27,5 +37,9 @@
   },
   "dependencies": {
     "inline-style-prefixer": "^2.0.1"
+  },
+  "pearDependencies": {
+    "react": "^0.14 || ^15.2.0",
+    "react-dom": "^0.14.0 || ^15.2.0"
   }
 }
