@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/_mocha test/.setup.js test/**/*.test.js",
     "build": "babel ./src --out-dir lib",
-    "prepublish": "npm run prepublish"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
