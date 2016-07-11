@@ -1,4 +1,4 @@
-# react-css-animation
+# react-css-animations
 [![Travis][travis-image]][travis-url]
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
@@ -8,7 +8,7 @@ and vendor prefixed. Animation event listeners are also vendor prefixed.
 
 ## Installation
 ```bash
-  $ npm i --save react-css-animation
+  $ npm i --save react-css-animations
 ```
 ## Usage
 
@@ -20,7 +20,7 @@ and vendor prefixed. Animation event listeners are also vendor prefixed.
 
 ```js
 import React from 'react'
-import CSSAnimation from 'react-css-animation'
+import CSSAnimation from 'react-css-animations'
 
 export default function MyAnimatedComponent() {
   return (
@@ -59,5 +59,5 @@ Props:
 ## LICENSE
 MIT
 
-[travis-image]: https://travis-ci.org/nickpisacane/react-css-animation.svg?branch=master
-[travis-url]: https://travis-ci.org/nickpisacane/react-css-animation
+[travis-image]: https://travis-ci.org/nickpisacane/react-css-animations.svg?branch=master
+[travis-url]: https://travis-ci.org/nickpisacane/react-css-animations

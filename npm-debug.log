@@ -1,0 +1,129 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/nindaff/.nvm/versions/node/v6.2.0/bin/node',
+1 verbose cli   '/home/nindaff/.nvm/versions/node/v6.2.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/nindaff/Node/react-css-animation',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/nindaff/.npm/react-css-animation/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/nindaff/.npm correctMkdir not in flight; initializing
+10 info lifecycle react-css-animation@0.0.1~prepublish: react-css-animation@0.0.1
+11 verbose lifecycle react-css-animation@0.0.1~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle react-css-animation@0.0.1~prepublish: PATH: /home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/bin/node-gyp-bin:/home/nindaff/Node/react-css-animation/node_modules/.bin:/home/nindaff/.nvm/versions/node/v6.2.0/bin:/home/nindaff/.themekit:/home/nindaff/.nvm/versions/node/v6.2.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/nindaff/PredictionIO/bin:/home/nindaff/Scripts:/usr/local/share/scala/bin:home/nindaff/PredictionIO-9.5/bin:/home/nindaff/PredictionIO-9.5/bin:/usr/local/go/bin:/home/nindaff/go/bin:/home/nindaff/.fzf/bin
+13 verbose lifecycle react-css-animation@0.0.1~prepublish: CWD: /home/nindaff/Node/react-css-animation
+14 silly lifecycle react-css-animation@0.0.1~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle react-css-animation@0.0.1~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/home/nindaff/.npm/react-css-animation/0.0.1/package.tgz',
+16 verbose tar pack   '/home/nindaff/Node/react-css-animation' ]
+17 verbose tarball /home/nindaff/.npm/react-css-animation/0.0.1/package.tgz
+18 verbose folder /home/nindaff/Node/react-css-animation
+19 verbose addLocalTarball adding from inside cache /home/nindaff/.npm/react-css-animation/0.0.1/package.tgz
+20 verbose correctMkdir /home/nindaff/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd react-css-animation@0.0.1
+22 verbose afterAdd /home/nindaff/.npm/react-css-animation/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /home/nindaff/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /home/nindaff/.npm/react-css-animation/0.0.1/package/package.json written
+25 silly publish { name: 'react-css-animation',
+25 silly publish   version: '0.0.1',
+25 silly publish   description: 'CSS animations with react',
+25 silly publish   main: 'index.js',
+25 silly publish   scripts:
+25 silly publish    { test: '_mocha test/.setup.js test/**/*.test.js',
+25 silly publish      build: 'babel ./src --out-dir lib',
+25 silly publish      prepublish: 'npm run build' },
+25 silly publish   keywords: [ 'react', 'animation', 'css' ],
+25 silly publish   author: { name: 'Nick Pisacane', email: 'pisacanen@gmail.com' },
+25 silly publish   repoository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'https://github.com/nickpisacane/react-css-animation' },
+25 silly publish   license: 'MIT',
+25 silly publish   devDependencies:
+25 silly publish    { 'animate.css': '^3.5.1',
+25 silly publish      'babel-plugin-transform-object-assign': '^6.8.0',
+25 silly publish      'babel-plugin-transform-object-rest-spread': '^6.8.0',
+25 silly publish      'babel-preset-es2015': '^6.9.0',
+25 silly publish      'babel-preset-react': '^6.11.1',
+25 silly publish      'babel-register': '^6.9.0',
+25 silly publish      chai: '^3.5.0',
+25 silly publish      enzyme: '^2.4.1',
+25 silly publish      jsdom: '^9.4.1',
+25 silly publish      mocha: '^2.5.3',
+25 silly publish      react: '^15.2.1',
+25 silly publish      'react-addons-test-utils': '^15.2.1',
+25 silly publish      'react-dom': '^15.2.1',
+25 silly publish      sinon: '^1.17.4' },
+25 silly publish   dependencies: { 'inline-style-prefixer': '^2.0.1' },
+25 silly publish   pearDependencies: { react: '^0.14 || ^15.2.0', 'react-dom': '^0.14.0 || ^15.2.0' },
+25 silly publish   readme: '# react-css-animation\n[![Travis][travis-image]][travis-url]\n\n[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)\n\nCSS animations made easy with React. All CSS animation properties are inlined,\nand vendor prefixed. Animation event listeners are also vendor prefixed.\n\n## Installation\n```bash\n  $ npm i --save react-css-animation\n```\n## Usage\n\n```css\n@keyframes myAnimation {\n  /* ... */\n}\n```\n\n```js\nimport React from \'react\'\nimport CSSAnimation from \'react-css-animation\'\n\nexport default function MyAnimatedComponent() {\n  return (\n    <CSSAnimation\n      name=\'myAnimation\'\n      iterationCount={5}\n      delay={500}\n      duration={1000}\n      onStart={() => console.log(\'Animation started!\')}\n      onIteration={() => console.log(\'Animation iteration!\')}\n      onEnd={() => console.log(\'Animation ended!\')}\n    >\n      <p>Foo bar</p>\n    </CSSAnimation>\n  )\n}\n```\n\n ## API\n\n### CSSAnimation {React.Component}\nProps:\n* `onStart` {Function} - Called on "animationstart" event. (`noop`)\n* `onIteration` {Function} - Called on "animationiteration" event. (`noop`)\n* `onEnd` {Function} - Called on "animationend" event. (`noop`)\n* `name` {String} - CSS "animation-name" property. (`""`)\n* `timingFunction` {String} - CSS "animation-timing-function" property. (`"linear"`)\n* `direction` {String} - CSS "animation-direction" property. (`"normal"`)\n* `fillMode` {String} - CSS "animation-fill-mode" property. (`"none"`)\n* `playState` {String} - CSS "animation-play-state" property. (`"running"`)\n* `delay` {Number} - CSS "animation-delay" property in milliseconds. (`0`)\n* `duration` {Number} - CSS "animation-duration" property in milliseconds. (`0`)\n* `iterationCount` {Number} - CSS "animation-iteration-count". (`1`)\n* `infinite` {Boolean} - Overides `iterationCount`, i.e. "animation-iteration-count: infinite". (`false`)\n\n## LICENSE\nMIT\n\n[travis-image]: https://travis-ci.org/nickpisacane/react-css-animation.svg?branch=master\n[travis-url]: https://travis-ci.org/nickpisacane/react-css-animation\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '465e002d01bdf6fada943096a4adf475c40ed63f',
+25 silly publish   _id: 'react-css-animation@0.0.1',
+25 silly publish   _shasum: '82f0b8e00832165590d84d2a36805421ba0988ad',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name react-css-animation
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'react-css-animation',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'react-css-animation',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/react-css-animation
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /home/nindaff/.npm/react-css-animation/0.0.1/package.tgz
+34 verbose request uri https://registry.npmjs.org/react-css-animation
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 7:10:11 PM
+37 verbose request using bearer token for auth
+38 verbose request id 1eb3ec12fcf6751a
+39 http request PUT https://registry.npmjs.org/react-css-animation
+40 http 403 https://registry.npmjs.org/react-css-animation
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '113',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Mon, 11 Jul 2016 02:10:11 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-dfw1845-DFW',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1468203011.414672,VS0,VE462',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /home/nindaff/.npm/registry.npmjs.org/react-css-animation on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: you do not have permission to publish "react-css-animation". Are you logged in as the correct user? : react-css-animation
+44 verbose stack     at makeError (/home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+44 verbose stack     at Request._callback (/home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+44 verbose stack     at Request.self.callback (/home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (/home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+44 verbose stack     at emitOne (events.js:101:20)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/home/nindaff/.nvm/versions/node/v6.2.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+45 verbose statusCode 403
+46 verbose pkgid react-css-animation
+47 verbose cwd /home/nindaff/Node/react-css-animation
+48 error Linux 4.4.0-28-generic
+49 error argv "/home/nindaff/.nvm/versions/node/v6.2.0/bin/node" "/home/nindaff/.nvm/versions/node/v6.2.0/bin/npm" "publish"
+50 error node v6.2.0
+51 error npm  v3.8.9
+52 error code E403
+53 error you do not have permission to publish "react-css-animation". Are you logged in as the correct user? : react-css-animation
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
