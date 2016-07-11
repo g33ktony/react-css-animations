@@ -1,1 +1,1 @@
-export default from './lib/CSSAnimation'
+module.exports = require('./lib/CSSAnimation')
