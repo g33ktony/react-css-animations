@@ -1,1 +1,1 @@
-module.exports = require('./lib/CSSAnimation')
+module.exports = require('./src/CSSAnimation')
