@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'propTypes'
 import prefixAll from 'inline-style-prefixer/static'
 
 const noop = () => {}
